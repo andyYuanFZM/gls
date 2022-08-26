@@ -44,6 +44,9 @@ reservedBlockNum=300000
 enable=true
 msgCacheSize=10240
 driver="leveldb"
+types = ["dht"]
+waitPid = false
+dbCache = 16
 
 [p2p.sub.gossip]
 serverStart=true
