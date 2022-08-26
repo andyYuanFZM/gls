@@ -52,8 +52,9 @@ dbCache = 16
 serverStart=true
 
 [p2p.sub.dht]
-#bootstraps是内置不能修改的引导节点
-bootstraps=[]
+maxConnectNum = 100
+isFullNode = true
+maxBroadcastPeers = 1
 
 [p2p.sub.dht.broadcast]
 # 区块哈希广播最小大小 100KB
