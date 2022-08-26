@@ -44,17 +44,9 @@ reservedBlockNum=300000
 enable=true
 msgCacheSize=10240
 driver="leveldb"
-types = ["dht"]
-waitPid = false
-dbCache = 16
 
 [p2p.sub.gossip]
 serverStart=true
-
-[p2p.sub.dht]
-maxConnectNum = 100
-isFullNode = true
-maxBroadcastPeers = 1
 
 [p2p.sub.dht.broadcast]
 # 区块哈希广播最小大小 100KB
